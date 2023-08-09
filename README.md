@@ -14,8 +14,8 @@ In the specific theater there are 5 zones in total. For each one of them there a
 - 100 seats in zone A (type A), each seat costs 45 €
 - 200 seats in zone B (type B), each seat costs 35 €
 - 400 seats in zone C (type C), each seat costs 25 €
-- 220 seats in Center (type CE), each seat costs 30 €
-- 70 seats on Sides (type S), each seat costs 20 €
+- 225 seats in Center (type CE), each seat costs 30 €
+- 75 seats on Sides (type S), each seat costs 20 €
 
 ## How to compile
 ```
