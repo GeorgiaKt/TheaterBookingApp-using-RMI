@@ -11,11 +11,11 @@ In this Theater Booking Application a client can:
 The server is responsible for handling the above functionalities.
 
 In the specific theater there are 5 zones in total. For each one of them there are:
-- 100 seats in zone A (type A), each one of the seats costs 45 €
-- 200 seats in zone B (type B), each one of the seats costs 35 €
-- 400 seats in zone C (type C), each one of the seats costs 25 €
-- 220 seats in Center (type CE), each one of the seats costs 30 €
-- 70 seats on Sides (type S), each one of the seats costs 20 €
+- 100 seats in zone A (type A), each seat costs 45 €
+- 200 seats in zone B (type B), each seat costs 35 €
+- 400 seats in zone C (type C), each seat costs 25 €
+- 220 seats in Center (type CE), each seat costs 30 €
+- 70 seats on Sides (type S), each seat costs 20 €
 
 ## How to compile
 ```
