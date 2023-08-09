@@ -35,3 +35,6 @@ Run Client (**one** of the following!):
   java THClient cancel <hostname> <type> <number> <name>
 ```
 *Server and Client should be running in different terminals.*
+
+## Setup Details
+- JDK 20.0.1
