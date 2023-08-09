@@ -17,6 +17,9 @@ In the specific theater there are 5 zones in total. For each one of them there a
 - 225 seats in Center (type CE), each seat costs 30 €
 - 75 seats on Sides (type S), each seat costs 20 €
 
+## Prerequisites
+- JDK installed
+
 ## How to compile
 ```
   javac *.java
