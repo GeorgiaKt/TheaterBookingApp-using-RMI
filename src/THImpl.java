@@ -51,11 +51,11 @@ public class THImpl extends java.rmi.server.UnicastRemoteObject implements THInt
                 availableSeatsSides++;
 
         availableSeatsRes = "AVAILABLE SEATS:\n" +
-                availableSeatsA + " seats ZoneA (code A) - Price: 45 euro\n" +
-                availableSeatsB + " seats ZoneB (code B) - Price: 35 euro\n" +
-                availableSeatsC + " seats ZoneC (code C) - Price: 25 euro\n" +
-                availableSeatsCenter + " seats Center (code CE) - Price: 30 euro\n" +
-                availableSeatsSides + " seats Sides (code S) - Price: 20 euro\n";
+                availableSeatsA + " seats ZoneA (type A) - Price: 45 euro\n" +
+                availableSeatsB + " seats ZoneB (type B) - Price: 35 euro\n" +
+                availableSeatsC + " seats ZoneC (type C) - Price: 25 euro\n" +
+                availableSeatsCenter + " seats Center (type CE) - Price: 30 euro\n" +
+                availableSeatsSides + " seats Sides (type S) - Price: 20 euro\n";
 
         return availableSeatsRes;
     }
@@ -92,7 +92,7 @@ public class THImpl extends java.rmi.server.UnicastRemoteObject implements THInt
                     }
 
                 bookedSeats = number - tmp; //in case someone else books some of the seats available, calculate again the seats that are booked
-                return "Booked " + bookedSeats + " seats in ZoneA (code A), Cost: " + cost;
+                return "Booked " + bookedSeats + " seats in ZoneA (type A), Cost: " + cost;
             } else if (bookedSeats == number) { //if all the seats requested are available
                 //booking, calculating the total cost & the amount of available seats booked
                 tmp = number;
@@ -104,7 +104,7 @@ public class THImpl extends java.rmi.server.UnicastRemoteObject implements THInt
                     }
 
                 bookedSeats = number - tmp;
-                return "Booked " + bookedSeats + " seats in ZoneA (code A), Cost: " + cost;
+                return "Booked " + bookedSeats + " seats in ZoneA (type A), Cost: " + cost;
             } else //if no seats are available
                 return "-1"; //-1 for not enough available seats to book
 
@@ -131,7 +131,7 @@ public class THImpl extends java.rmi.server.UnicastRemoteObject implements THInt
                     }
 
                 bookedSeats = number - tmp; //in case someone else books some of the seats available, calculate again the seats that are booked
-                return "Booked " + bookedSeats + " seats in ZoneB (code B), Cost: " + cost;
+                return "Booked " + bookedSeats + " seats in ZoneB (type B), Cost: " + cost;
             } else if (bookedSeats == number) { //if all the seats requested are available
                 //booking, calculating the total cost & the amount of available seats booked
                 tmp = number;
@@ -143,7 +143,7 @@ public class THImpl extends java.rmi.server.UnicastRemoteObject implements THInt
                     }
 
                 bookedSeats = number - tmp;
-                return "Booked " + bookedSeats + " seats in ZoneB (code B), Cost: " + cost;
+                return "Booked " + bookedSeats + " seats in ZoneB (type B), Cost: " + cost;
             } else //if no seats are available
                 return "-1"; //-1 for not enough available seats to book
 
@@ -170,7 +170,7 @@ public class THImpl extends java.rmi.server.UnicastRemoteObject implements THInt
                     }
 
                 bookedSeats = number - tmp; //in case someone else books some of the seats available, calculate again the seats that are booked
-                return "Booked " + bookedSeats + " seats in ZoneC (code C), Cost: " + cost;
+                return "Booked " + bookedSeats + " seats in ZoneC (type C), Cost: " + cost;
             } else if (bookedSeats == number) { //if all the seats requested are available
                 //booking, calculating the total cost & the amount of available seats booked
                 tmp = number;
@@ -182,7 +182,7 @@ public class THImpl extends java.rmi.server.UnicastRemoteObject implements THInt
                     }
 
                 bookedSeats = number - tmp;
-                return "Booked " + bookedSeats + " seats in ZoneC (code C), Cost: " + cost;
+                return "Booked " + bookedSeats + " seats in ZoneC (type C), Cost: " + cost;
             } else //if no seats are available
                 return "-1"; //-1 for not enough available seats to book
 
@@ -209,7 +209,7 @@ public class THImpl extends java.rmi.server.UnicastRemoteObject implements THInt
                     }
 
                 bookedSeats = number - tmp; //in case someone else books some of the seats available, calculate again the seats that are booked
-                return "Booked " + bookedSeats + " seats in Center (code CE), Cost: " + cost;
+                return "Booked " + bookedSeats + " seats in Center (type CE), Cost: " + cost;
             } else if (bookedSeats == number) { //if all the seats requested are available
                 //booking, calculating the total cost & the amount of available seats booked
                 tmp = number;
@@ -221,7 +221,7 @@ public class THImpl extends java.rmi.server.UnicastRemoteObject implements THInt
                     }
 
                 bookedSeats = number - tmp;
-                return "Booked " + bookedSeats + " seats in Center (code CE), Cost: " + cost;
+                return "Booked " + bookedSeats + " seats in Center (type CE), Cost: " + cost;
             } else //if no seats are available
                 return "-1"; //-1 for not enough available seats to book
 
@@ -248,7 +248,7 @@ public class THImpl extends java.rmi.server.UnicastRemoteObject implements THInt
                     }
 
                 bookedSeats = number - tmp; //in case someone else books some of the seats available, calculate again the seats that are booked
-                return "Booked " + bookedSeats + " seats in Sides (code S), Cost: " + cost;
+                return "Booked " + bookedSeats + " seats in Sides (type S), Cost: " + cost;
             } else if (bookedSeats == number) { //if all the seats requested are available
                 //booking, calculating the total cost & the amount of available seats booked
                 tmp = number;
@@ -260,7 +260,7 @@ public class THImpl extends java.rmi.server.UnicastRemoteObject implements THInt
                     }
 
                 bookedSeats = number - tmp;
-                return "Booked " + bookedSeats + " seats in Sides (code S), Cost: " + cost;
+                return "Booked " + bookedSeats + " seats in Sides (type S), Cost: " + cost;
             } else //if no seats are available
                 return "-1"; //-1 for not enough available seats to book
         } else
