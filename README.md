@@ -1,5 +1,5 @@
 # Theater Booking Application using RMI
-A Server-Client project made in Java with the use of RMI for managing the booking process in a theater.
+Server-Client project made in Java with the use of RMI for managing the booking process in a theater.
 
 ## Description
 In this Theater Booking Application a client can:
